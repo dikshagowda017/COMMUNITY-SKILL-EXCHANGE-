@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Skill — Skill Exchange</title>
+  <link rel="stylesheet" href="addskills.css">
+</head>
+<body>
+
+  <nav>
+    <h1>SkillExchange</h1>
+    <ul>
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="addskills.html" class="active">🎯 Add Skill</a></li>
+      <li><a href="#">💬 Explore</a></li>
+      <li><a href="#">👤 Profile</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <h2>🧑‍🏫 Add Skills to Teach or Learn</h2>
+    <p class="intro">
+      Share what you can teach and what you want to learn!
+    </p>
+
+    <form id="skillForm">
+      <!-- Skill to Learn -->
+      <h3>🧑‍🎓 Skill You Want to Learn</h3>
+      <label for="learn_skill_name">Skill Name</label>
+      <input type="text" id="learn_skill_name" placeholder="e.g. Guitar, French, Cooking" required>
+
+      <label for="learn_level">Your Current Level</label>
+      <select id="learn_level">
+        <option value="Beginner">Beginner</option>
+        <option value="Intermediate">Intermediate</option>
+        <option value="Expert">Expert</option>
+      </select>
+
+      <label for="learn_description">Why you want to learn this</label>
+      <textarea id="learn_description" rows="3" placeholder="Tell us more..." required></textarea>
+
+      <hr>
+
+      <!-- Skill to Teach -->
+      <h3>🧑‍🏫 Skill You Want to Teach</h3>
+      <label for="teach_skill_name">Skill Name</label>
+      <input type="text" id="teach_skill_name" placeholder="e.g. Web Development, Painting" required>
+
+      <label for="teach_level">Your Expertise Level</label>
+      <select id="teach_level">
+        <option value="Beginner">Beginner</option>
+        <option value="Intermediate">Intermediate</option>
+        <option value="Expert">Expert</option>
+      </select>
+
+      <label for="teach_description">Tell others about your teaching</label>
+      <textarea id="teach_description" rows="3" placeholder="What can you teach?" required></textarea>
+
+      <button type="submit">✨ Submit</button>
+    </form>
+
+    <h2 id="skilladded"></h2>
+  </div>
+
+  <footer>
+    <p>© 2025 SkillExchange. Learn. Teach. Grow together.</p>
+  </footer>
+
+  <script src="addskills.js"></script>
+</body>
+</html>

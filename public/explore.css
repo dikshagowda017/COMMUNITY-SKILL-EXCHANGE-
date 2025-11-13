@@ -1,0 +1,120 @@
+/* 🔝 Dashboard Navigation */
+nav {
+  background-color: #0A2647;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  color: white;
+}
+
+nav h1 {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+nav ul li a:hover {
+  color: #A0C4FF;
+}
+
+nav ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: #A0C4FF;
+  transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+/* 👤 User Info Section */
+#user-info {
+  text-align: center;
+  background: #F5F7FA;
+  padding: 40px;
+  border-radius: 15px;
+  margin: 40px auto;
+  width: 80%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+#user-info h2 {
+  color: #0A2647;
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+#user-info p {
+  color: #333;
+  font-size: 1.1rem;
+}
+
+/* 🌍 Explore Skills Section */
+#explore {
+  text-align: center;
+  padding: 60px 40px;
+  background-color: #FFFFFF;
+}
+
+#explore h2 {
+  color: #0A2647;
+  font-weight: 800;
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+
+#explore .service-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  justify-content: center;
+}
+
+#explore .card {
+  background: #F5F7FA;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+#explore .card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 18px rgba(10, 38, 71, 0.2);
+}
+
+#explore .card h3 {
+  color: #0A2647;
+  font-weight: 700;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+#explore .card p {
+  color: #555;
+  font-size: 1rem;
+  margin: 5px 0;
+}

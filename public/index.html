@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Skill Exchange Platform</title>
+  <link rel="stylesheet" href="style1.css">
+  <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/512/3135/3135715.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- 🔝 Navigation Bar -->
+  <header>
+    <nav>
+      <h2 class="logo">SkillExchange</h2>
+      <ul>
+        <li><a href="#login">Login / Register</a></li>
+        <li><a href="#services">Our Services</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- 🏠 Home Section -->
+  <section id="home" class="section home-section">
+    <div class="content">
+      <h1>Community Skill Exchange</h1>
+      <h3>Learn, Share and Grow Together</h3>
+      <p>Join a community where knowledge has no price tag — only passion to share and learn!</p>
+      <a href="#login" class="btn">Get Started</a>
+    </div>
+  </section>
+
+  <!-- 🔐 LOGIN / REGISTER SECTION -->
+  <section id="login">
+    <div class="auth-container">
+
+      <!-- Login Box -->
+      <div class="form-box login-box" id="loginBox">
+        <h2>Login</h2>
+        <form id="loginForm">
+          <input type="email" id="loginEmail" placeholder="Email" required>
+          <input type="password" id="loginPassword" placeholder="Password" required>
+          <button type="submit">Login</button>
+          <p>Don’t have an account? <a href="#" id="showRegister">Register Now</a></p>
+        </form>
+        
+         <p id="login-answer"></p>
+      </div>
+
+      <!-- Register Box -->
+      <div class="form-box register-box" id="registerBox" style="display: none;">
+        <h2>Register</h2>
+        <form id="registerForm">
+          <input type="text" placeholder="Full Name" required>
+         <input type="email" placeholder="Email Address" required>
+         <textarea placeholder="Short Bio (Tell us about yourself)" rows="3" required></textarea>
+         <input type="text" placeholder="User ID" required>
+          <input type="password" placeholder="Password" required>
+         <input type="tel" placeholder="Contact Number" required>
+         <input type="text" placeholder="Location" required>
+         <button type="submit">Register</button>
+        <p>Already have an account? <a href="#" id="showLogin">Login</a></p>
+        </form>
+        <p id="register-answer"></p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ⚙️ Services Section -->
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="service-box">
+      <div class="card"><i class="fas fa-hands-helping"></i><h3>Free Skill Exchange</h3></div>
+      <div class="card"><i class="fas fa-user-friends"></i><h3>Mutual Matching</h3></div>
+      <div class="card"><i class="fas fa-star"></i><h3>Reviews & Ratings</h3></div>
+      <div class="card"><i class="fas fa-award"></i><h3>Skill Badges</h3></div>
+    </div>
+  </section>
+
+  <!-- 📞 Contact Us -->
+  <section id="contact" class="section contact-section">
+    <h2>Contact Us</h2>
+    <p>Have questions? Reach us through the options below:</p>
+    <div class="contact-icons">
+      <a href="tel:123456789"><i class="fas fa-phone-alt"></i><span>1234567890</span></a>
+      <a href="mailto:CommunityExchange@gmail.com"><i class="fas fa-envelope"></i><span>CommunityExchange@gmail.com</span></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Community Skill Exchange | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
